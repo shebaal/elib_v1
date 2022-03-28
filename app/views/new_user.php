@@ -1526,7 +1526,7 @@
 <!-- Multi Column with Form Separator -->
 <div class="card mb-4">
   <h5 class="card-header">Multi Column with Form Separator</h5>
-  <form class="card-body" action="/save_user" method="POST">
+  <form class="card-body" action="" method="POST">
     <h6>1. Account Details</h6>
     <div class="row g-3">
       <div class="col-md-6">

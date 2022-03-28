@@ -21,13 +21,13 @@ class UsersController extends Controller{
         $user->email=$_POST['email'];
         $user->password=md5($_POST['password']);
         $user->is_active=isset($_POST['is_active'])?1:0;
-        $user->role_id=1;
+        // $user->role_id=1;
         $user->save();
         if($user->save())
         
-        $this->view('feedback',['success'=>'data inserted successful']);
+        $this->Dashboard_view('feedback',['success'=>'data inserted successful']);
         else 
-        $this->view('feedback',['danger'=>'can not add data']);
+        $this->Dashboard_view('feedback',['danger'=>'can not add data']);
 
     }
 

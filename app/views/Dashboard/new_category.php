@@ -25,7 +25,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <title> Vertical Layouts - Forms | Sneat - Bootstrap 5 HTML Admin Template - Pro</title>
+    <title> Add Category</title>
     
     <meta name="description" content="Most Powerful &amp; Comprehensive Bootstrap 5 HTML Admin Dashboard Template built for developers!" />
     <meta name="keywords" content="dashboard, bootstrap 5 dashboard, bootstrap 5 design, bootstrap 5">
@@ -1518,51 +1518,20 @@
           <div class="container-xxl flex-grow-1 container-p-y">
             
             
-<h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Forms/</span> Vertical Layouts</h4>
+<!-- <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Forms/</span> Vertical Layouts</h4> -->
 
 
 
 
 <!-- Multi Column with Form Separator -->
 <div class="card mb-4">
-  <h5 class="card-header">Add user </h5>
-  <form class="card-body" action="/dashboard/save_user" method="POST">
-    <h6>1. Account Details</h6>
+  <h5 class="card-header">Add Category</h5>
+  <form class="card-body" action="/dashboard/save_category" method="POST" enctype='multipart/form-data'>
+    
     <div class="row g-3">
       <div class="col-md-6">
-        <label class="form-label" for="multicol-username">Username</label>
-        <input name="name" type="text" id="multicol-username" class="form-control" placeholder="john.doe" />
-      </div>
-      <div class="col-md-6">
-        <label class="form-label" for="multicol-email">Email</label>
-        <div class="input-group input-group-merge">
-          <input  name="email"type="text" id="multicol-email" class="form-control" placeholder="john.doe" aria-label="john.doe" aria-describedby="multicol-email2" />
-          <span class="input-group-text" id="multicol-email2">@example.com</span>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="form-password-toggle">
-          <label class="form-label" for="multicol-password">Password</label>
-          <div class="input-group input-group-merge">
-            <input  name="password" type="password" id="multicol-password" class="form-control" placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;" aria-describedby="multicol-password2" />
-            <span class="input-group-text cursor-pointer" id="multicol-password2"><i class="bx bx-hide"></i></span>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="form-password-toggle">
-          <label class="form-label" for="multicol-confirm-password">user activation</label>
-          <div class="input-group input-group-merge">
-          <label class="switch">
-              <input name="is_active" value=1 type="checkbox" checked class="switch-input" />
-              <span class="switch-toggle-slider">
-                <span class="switch-on"></span>
-                <span class="switch-off"></span>
-              </span>
-              <span class="switch-label">is active</span>
-            </label>
-          </div>
-        </div>
+        <label class="form-label" for="multicol-username">Name</label>
+        <input name="name" type="text" id="multicol-username" class="form-control" placeholder="category name" />
       </div>
     </div>
     

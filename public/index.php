@@ -12,6 +12,8 @@ use coding\app\controllers\PublishersController;
 use coding\app\system\AppSystem;
 use coding\app\system\Router;
 use coding\app\controllers\UsersController;
+use coding\app\controllers\BookController;
+use coding\app\controllers\CategoryController;
 
 use Dotenv\Dotenv;
 
@@ -53,6 +55,13 @@ Router::get('/dashboard/new_user',[UsersController::class,'newUser']);
 Router::post('/dashboard/save_user',[UsersController::class,'saveUser']);
 Router::get('/save_author',[AuthorsController::class,'createAuthor']);
 
+// add book
+Router::get('/dashboard/new_book',[BookController::class,'newBook']);
+Router::post('/dashboard/save_book',[BookController::class,'saveBook']);
+
+// add category
+Router::get('/dashboard/new_category',[CategoryController::class,'newCategory']);
+Router::post('/dashboard/save_category',[CategoryController::class,'saveCategory']);
 
 
 //website router
