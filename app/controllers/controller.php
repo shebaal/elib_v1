@@ -7,9 +7,9 @@ use coding\app\system\Router;
 
 class Controller{
 
-   function view($viewName,$params=[]){
-       AppSystem::$appSystem->router->view($viewName,$params);
-   }
+//    function view($viewName,$params=[]){
+//        AppSystem::$appSystem->router->view($viewName,$params);
+//    }
 
    function Dashboard_view($viewName,$params=[]){
     AppSystem::$appSystem->router->Dashboard_view($viewName,$params);

@@ -41,14 +41,14 @@ class BookController extends Controller{
           $book->product_image=$filename;
           
           $book->save();
-          if($book->save())
+          if($book)
           
           $this->Dashboard_view('feedback',['success'=>'book inserted successful']);
           else 
           $this->Dashboard_view('feedback',['danger'=>'can not add book']);
         }
       }else{
-        $this->view('dashboard/new_book');
+        $this->Dashboard_view('feedback',['danger'=>'can not add book']);
       }
 
 
